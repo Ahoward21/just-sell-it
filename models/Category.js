@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-const { dateToString } = require('sqlstring');
 
 const sequelize = require('../config/connection.js');
 
@@ -16,8 +15,7 @@ Category.init(
     },
     category_name: {
       DataTypes: DataTypes.STRING,
-      allowNull: false,
-      
+      allowNull: false,       
     }
   },
   {
